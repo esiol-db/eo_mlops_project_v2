@@ -18,7 +18,7 @@ common_permissions: &permissions
 resources:
   quality_monitors:
     eo_mlops_project_quality_monitor:
-      table_name: eo_dev.eo_mlops_project.predictions
+      table_name: ${bundle.target}.eo_mlops_project.predictions
       # TODO: Update the output schema name as per your requirements
       output_schema_name: ${bundle.target}.eo_mlops_project
       # TODO: Update the below parameters as per your requirements
